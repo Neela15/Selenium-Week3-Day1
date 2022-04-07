@@ -1,0 +1,38 @@
+package week3Assignment;
+
+public class Students {
+	
+	public void getStudentInfo(int id) 
+	{
+		System.out.println("Student ID:" +id);
+	}
+	public void getStudentInfo(int id,String name) 
+	{
+		System.out.println("Student ID:" +id);
+		System.out.println("Student Name:" +name);
+	}
+	public void getStudentInfo(int id,String name, String Dept) 
+	{
+		System.out.println("Student ID:" +id);
+		System.out.println("Student Name:" +name);
+		System.out.println("Student Department:" +Dept);
+	}
+	public void getStudentInfo(int id,String name, String Dept,String email) 
+	{
+		System.out.println("Student ID:" +id);
+		System.out.println("Student Name:" +name);
+		System.out.println("Student Department:" +Dept);
+		System.out.println("Student Email:" +email);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Students Student = new Students();
+		Student.getStudentInfo(14728);
+		Student.getStudentInfo(1427, "Geetha");
+		Student.getStudentInfo(14278, "Sheela", "EEE");
+		Student.getStudentInfo(14278, "Surya", "CSE", "surya1@gmail.com");
+
+	}
+
+}
