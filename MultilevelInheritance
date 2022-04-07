@@ -1,0 +1,67 @@
+package week3Assignment; // Super Class
+
+public class College {
+	
+	public void collegeName(String cName)
+	{
+		System.out.println("College Name :" +cName);
+	}
+	public void collegeCode(String cCode)
+	{
+		System.out.println("College Code :" +cCode);
+	}
+	public void collegeRank(String cRank)
+	{
+		System.out.println("College Rank :" +cRank);
+	}
+
+}
+
+package week3Assignment; //Another Super class but subclass of College class
+
+public class Department extends College {
+	
+	public void depName(String dName, String dName1, String dName2, String dName3)
+	{
+		System.out.println("Department Name:" +dName);
+		System.out.println("Department Name:" +dName1);
+		System.out.println("Department Name:" +dName2);
+		System.out.println("Department Name:" +dName3);
+	}
+
+}
+
+package week3Assignment; // SubClass for testing Multilevel Inheritance
+
+public class Student extends Department{
+	
+	public void studentName(String sName)
+	{
+		System.out.println("Student Name:" +sName);
+	}
+	public void studentDepartment(String sdept)
+	{
+		System.out.println("Student Department Name:" +sdept);
+	}
+	public void studentId(String sId)
+	{
+		System.out.println("Student Id:" +sId);
+	}
+	
+	public static void main(String[] args) {
+		Student S1 = new Student();
+		S1.collegeCode("C001");
+		S1.collegeName("SSR College");
+		S1.collegeRank("Fourth");
+		S1.depName("ECE", "EEE", "CSE", "EIE");
+		S1.studentDepartment("EIE");
+		S1.studentId("142781");
+		S1.studentName("Sunny");
+	}
+
+
+}
+
+
+
+
