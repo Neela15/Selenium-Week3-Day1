@@ -1,0 +1,37 @@
+package week3Assignment; //Super Class 
+
+public class BankInfo {
+	
+	public void savings()
+	{
+		System.out.println("This is a saving account");
+	}
+	public void fixed()
+	{
+		System.out.println("This is a Fixed Deposit account");
+	}
+	public void deposit()
+	{
+		System.out.println("This is deposit made by Neela");
+	}
+
+}
+
+package week3Assignment; // Sub Class
+
+public class AxisBank extends BankInfo{
+	
+	public void deposit()
+	{
+		System.out.println("This is the deposit made by Neela in Axis bank");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AxisBank account1= new AxisBank();
+		account1.savings();
+		account1.fixed();
+		account1.deposit();
+	}
+
+}
