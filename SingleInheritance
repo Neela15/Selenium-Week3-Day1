@@ -1,0 +1,34 @@
+package week3Assignment; // Computer Super Class
+
+public class Computer {
+	
+	public void computerModel(String name)
+	{
+		System.out.println("Computer Model: " +name);
+	}
+
+}
+
+package week3Assignment; // Desktop Sub Class
+
+public class Desktop extends Computer{
+	
+	public void desktopSize(int Size)
+	{
+		System.out.println("Desktop Size :" +Size);
+	}
+	
+	public static void main(String[] args) 
+	{
+		Desktop dsize = new Desktop();
+		dsize.desktopSize(10);
+		
+		Computer cname = new Computer();
+		cname.computerModel("HP");
+	}
+
+}
+
+
+
+
